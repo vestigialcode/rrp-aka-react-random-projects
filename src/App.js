@@ -5,7 +5,7 @@ function App() {
   const [state,setState]=useState("")
   const clickHandler=()=>{
 if(state === ""){
-  setState("Hello World")
+  setState("Hello There.. how you doing")
 }else{
   setState("")
 }
@@ -13,7 +13,7 @@ if(state === ""){
   return (
     <div className="App">
      <p>{state}</p>
-     <button onClick={clickHandler}>Click here</button>
+     <button  onMouseMoveCapture={clickHandler}>come here</button> 
     </div>
   );
 }
