@@ -9,8 +9,10 @@ function App() {
   
   const getData=()=>{
 
-    axios.get('https://s3-ap-southeast-1.amazonaws.com/he-public-data/users49b8675.json')
-    .then((evt)=>{setPika(evt.data[5].name);
+    axios.get('https://randomuser.me/api/')
+    .then((evt)=>{
+      setPika(JSON.stringify(evt))
+      console.log(evt)
     
   
     })
