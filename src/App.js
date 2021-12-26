@@ -30,7 +30,6 @@ if(state === ""){
      <p>{state}</p>
      <button  onMouseMoveCapture={clickHandler}>come here</button> 
 <p>{pika}</p>
-<image href='https://s3-ap-southeast-1.amazonaws.com/he-public-data/Richard%20Mathew3350914.jpg'></image>
 
 <button onClick={getData}>get data</button>
     </div>
