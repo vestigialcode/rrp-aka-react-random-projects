@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function App() {
   
-  const [state,setState]=useState("")
+  
   const [pika,setPika]= useState("")
   
   const getData=()=>{
@@ -18,17 +18,11 @@ function App() {
     })
   
   }
-  const clickHandler=()=>{
-if(state === ""){
-  setState("Hello There.. how you doing")
-}else{
-  setState("")
-}
-  }
+  
+
   return (
     <div className="App">
-     <p>{state}</p>
-     <button  onMouseMoveCapture={clickHandler}>come here</button> 
+    
 <p>{pika}</p>
 
 <button onClick={getData}>get data</button>
